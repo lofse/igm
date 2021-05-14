@@ -1,0 +1,207 @@
+Let's make a game!
+name:Bitcoin Empire
+desc:This game is from a future when bitcoin is the primary currency of the world. Mine bitcoin and invest in BitMarkets to earn as much bitcoin as possible.
+created:11/7/2102
+updated:11/7/2102
+version:1
+ 
+Settings
+building cost increase:100%
+building cost refund:100%
+*main
+  contains:res, buttons
+  *res
+    contains:Resources
+    class:fullWidth
+  *buttons
+    contains:Buttons
+*store
+  contains:buildings, upgrades
+  *buildings
+    contains:BulkDisplay, Buildings
+    header:BitMarkeets
+    tooltip origin:left
+  *upgrades
+    contains:Upgrades
+    header:Upgrade your CPU
+    costs:hide
+ 
+Buttons
+*minebitcoin
+ name:Mine Bitcoin
+ desc:Type some code to make your CPU mine bitcoin.
+ on click:yield 1 microbit
+ class:bigButton
+Resources
+*cpupower
+hidden
+start with: 1
+ 
+*microbit|microbits
+name:Microbit|Microbits
+desc:A millionth of a bitcoin.
+ 
+Buildings
+*trash
+name:Garbage Collection
+cost:50 microbits
+desc:Collect garbage and sell them for bitcoin. 0 to 2microbits per second.
+on tick:yield random(0,2) microbits 
+ 
+*juice
+name:Fruit Juice
+cost:380 microbits
+desc:Make juice for your neighborhood and earn bitcoin. 3 microbits per second.
+on tick:yield 3 microbits
+ 
+*news
+name:News Website
+cost:5900 microbits
+desc:Set up a news website and earn bitcoin from subscriptions. 45 microbits per second.
+on tick:yield 45 microbits
+ 
+*forgery
+name:Forgery
+cost: 95000 bitcoin
+desc:Build a forgery and forge metals to sell on the market. 650 microbits per second.
+on tick:yield 650 microbits 
+ 
+Upgrades
+*cpu1
+name:Biochip 1B
+desc:A rudimentary CPU from a phone. Al least an upgrade from your junkyard potato.
+on click:multiply microbit yield of minebitcoin by 3
+on click:hide       
+cost:200 microbits
+*trash1
+name:Speed Chip
+desc:Your trash collection robots are faster. Double trash profit.
+passive:multiply microbit yield of trash by 2
+cost:480 microbits
+req:have 20 trash
+*cpu2
+name:Infel 9830
+desc:Nicely crafted by Infel Inc. Good for mining.
+on click:multiply microbit yield of minebitcoin by 3.6
+cost:1100 microbits
+req:have cpu1
+ 
+name:Pathfinding Chip
+desc:Your trash collection robots find more trash to collect. Double trash profit.
+passive:multiply microbit yield of trash by 2
+cost:3500 microbits
+req:have 50 trash
+ 
+*cpu3
+name:Naudia PX28
+desc:A large processor from a large corporation who makes good processors. *naudia* Now fitted for bitcoin mining.
+on click:multiply bitcoin yield of minebitcoin by 5
+cost:8500 bitcoin
+req:have cpu2
+RAW Paste Data
+Let's make a game!
+name:Bitcoin Empire
+desc:This game is from a future when bitcoin is the primary currency of the world. Mine bitcoin and invest in BitMarkets to earn as much bitcoin as possible.
+created:11/7/2102
+updated:11/7/2102
+version:1
+ 
+Settings
+building cost increase:100%
+building cost refund:100%
+*main
+  contains:res, buttons
+  *res
+    contains:Resources
+    class:fullWidth
+  *buttons
+    contains:Buttons
+*store
+  contains:buildings, upgrades
+  *buildings
+    contains:BulkDisplay, Buildings
+    header:BitMarkeets
+    tooltip origin:left
+  *upgrades
+    contains:Upgrades
+    header:Upgrade your CPU
+    costs:hide
+ 
+Buttons
+*minebitcoin
+ name:Mine Bitcoin
+ desc:Type some code to make your CPU mine bitcoin.
+ on click:yield 1 microbit
+ class:bigButton
+Resources
+*cpupower
+hidden
+start with: 1
+ 
+*microbit|microbits
+name:Microbit|Microbits
+desc:A millionth of a bitcoin.
+ 
+Buildings
+*trash
+name:Garbage Collection
+cost:50 microbits
+desc:Collect garbage and sell them for bitcoin. 0 to 2microbits per second.
+on tick:yield random(0,2) microbits 
+ 
+*juice
+name:Fruit Juice
+cost:380 microbits
+desc:Make juice for your neighborhood and earn bitcoin. 3 microbits per second.
+on tick:yield 3 microbits
+ 
+*news
+name:News Website
+cost:5900 microbits
+desc:Set up a news website and earn bitcoin from subscriptions. 45 microbits per second.
+on tick:yield 45 microbits
+ 
+*forgery
+name:Forgery
+cost: 95000 bitcoin
+desc:Build a forgery and forge metals to sell on the market. 650 microbits per second.
+on tick:yield 650 microbits 
+ 
+Upgrades
+*cpu1
+name:Biochip 1B
+desc:A rudimentary CPU from a phone. Al least an upgrade from your junkyard potato.
+on click:multiply microbit yield of minebitcoin by 3
+on click:hide       
+cost:200 microbits
+*trash1
+name:Speed Chip
+desc:Your trash collection robots are faster. Double trash profit.
+passive:multiply microbit yield of trash by 2
+cost:480 microbits
+req:have 20 trash
+*cpu2
+name:Infel 9830
+desc:Nicely crafted by Infel Inc. Good for mining.
+on click:multiply microbit yield of minebitcoin by 3.6
+cost:1100 microbits
+req:have cpu1
+
+name:Pathfinding Chip
+desc:Your trash collection robots find more trash to collect. Double trash profit.
+passive:multiply microbit yield of trash by 2
+cost:3500 microbits
+req:have 50 trash
+
+*cpu3
+name:Naudia PX28
+desc:A large processor from a large corporation who makes good processors. *naudia* Now fitted for bitcoin mining.
+on click:multiply bitcoin yield of minebitcoin by 5
+cost:8500 bitcoin
+req:have cpu2
+My Pastes
+Untitled
+9 hours ago
+xm
+2 days ago
+
